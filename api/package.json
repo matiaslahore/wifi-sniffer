@@ -1,0 +1,23 @@
+{
+    "name": "api-vs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^3.0.2",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "mqtt": "^2.18.8",
+        "mysql": "^2.16.0",
+        "underscore": "^1.9.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.4"
+    }
+}

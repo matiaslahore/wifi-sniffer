@@ -1,0 +1,10 @@
+Poner en modo mon: sudo airmon-ng start wlp2s0
+Muestra las interfaces(deberia aparecer mon0): sudo tcpdump -D
+
+consola CTS: sudo tcpdump -i mon0 type ctl subtype cts | grep RA:00:00:00:00:00:00
+consola RTS: sudo python rts-sender.py
+
+Crontab -e
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+@reboot sh /root/connect.sh >> /root/log_wifi.log 2>&1
